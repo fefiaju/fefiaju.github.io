@@ -1,0 +1,388 @@
+* {box-sizing: border-box;}
+h2, h3, p {
+    margin: 0;
+}
+/* img {
+    width: 100%;
+    display: block;
+} */
+body {
+    font-family: sans-serif;
+}
+/* 基本樣式 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #000; /* 文字顏色 */
+}
+
+
+.wrap {
+   
+    display: flex;
+    justify-content:  center; /* 將內部元素水平置中 */
+    /* align-items: center; 垂直置中 */
+    background-color: #86A176;
+}
+/* Header */
+header {
+   
+    width: 1280px;
+    height: 630px;
+    display: flex;
+    justify-content: space-between; /* 水平置中 */
+    align-items:  flex-start; /* 垂直置上 */
+    padding: 20px;
+    margin-top: 21px; /* 整體向下推 21px */
+    background-image: url(./image/warp-image.png);
+    background-position: center; /* 背景圖片水平居中 */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 156px; /* 向右推156px */
+}
+
+.logo img {
+    width: 291px; /* 調整 Logo 大小 */
+    height: 82px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333; /* 標題文字顏色 */
+}
+nav.menu a {
+    font-family: "Italiana", serif;
+}
+
+.menu {
+    display: flex;
+    gap: 13px;
+    margin-right: 156px; 
+    font-style: normal; /* 字體風格 */
+    margin-top: 34px; /* 整體向下推 34px */
+  
+      
+}
+
+.menu a {
+    
+    display: inline-block;
+    width: 76px; /* 按鈕寬度 */
+    height: 23px; /* 按鈕高度 */
+    line-height: 23px; /* 垂直置中文字 */
+    text-align: center;
+    font-size: 14px; /* 文字大小 */
+    text-decoration: none; /* 移除超連結的底線 */
+    color: #ffffff; /* 選單文字顏色 */
+    background-color: #6C815F; /* 按鈕背景顏色 (綠色) */
+    border-radius: 7px; /* 圓角 */
+    transition: background-color 0.3s, color 0.3s; /* 滑鼠移動時的過渡效果 */
+}
+
+
+.menu a:hover {
+    width: 76px; /* 按鈕寬度 */
+    height: 23px; /* 按鈕高度 */
+    background-color: #7cd247; /* 按鈕背景顏色 (綠色) */
+    border-radius: 7px; /* 圓角 */
+    color: #ffffff; /* 滑鼠懸停效果 */
+}
+
+/* Biography Section */
+.wrap1{
+    
+    display: flex;
+    justify-content:  center; /* 將內部元素水平置中 */
+    /* align-items: center; 垂直置中 */
+    background-color: #86A176;
+}
+#biography {
+    width: 1280px;
+    height: 630px;
+    display: flex; 
+    /* justify-content: space-between; 兩邊對齊 */
+    align-items: center; /* 垂直置中 */
+    background-color: #86A176; /* 背景色與設計一致 */
+    gap: 10px; /* 圖片與文字之間的間距 */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* Biography Image */
+#biography img {
+    width: 724px; /* 圖片占一半空間 */
+    height: auto; /* 保持圖片比例 */
+    padding-right:99px ;
+    margin-right: 80px;
+
+}
+
+/* Biography Text */
+.biography-text {
+    width: 400px;
+    height: auto;
+    display: flex; /* 使用 Flexbox 排版 */
+    flex-direction: column; /* 改為上下排列 */
+    
+    justify-content: center; /* 讓內文區塊垂直置中 */
+    padding: 0 0px; /*添加內邊距，避免內容太靠邊*/
+}
+#biography h2 {
+    font-family: "Italiana", serif; /* 字體樣式 */
+    font-size: 36px; /* 標題字體大小 */
+    color: #ffffff; /* 標題字體顏色 */
+    margin-bottom: 46px; /* 與段落之間的距離 */
+}
+
+#biography p {
+    font-family: "Arial", sans-serif; /* 段落字體樣式 */
+    font-size: 12px; /* 段落字體大小 */
+    line-height: 1.8; /* 行高 */
+    color: #ffffff; /* 字體顏色 */
+    margin: 11px;
+}
+img {
+    width: 100%;
+    display: block;
+}
+.wrap2 {
+    width: 1060px;
+    padding: 150px 0px 100px 0px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+main {
+    color: white;
+    width: 1060px;
+    height: 400px;
+    padding-top: 180px;/*把內容往下擠*/
+    padding-left: 37px;/*把內容往右擠*/
+    margin-bottom: 50px;
+    border-radius: 15px;
+    background-image: url(./image/main_image.png);
+}
+.main-title {
+    font-family: "Italiana", serif; /* 字體樣式 */
+    font-size: 64px;
+    margin-bottom: 8px;/*在下方多隔出一些空間*/
+}
+.main-intro {
+    font-family: "Arial", sans-serif; /* 段落字體樣式 */
+    font-size: 16px;
+    width: 621px;
+    margin-left: 10px;/*稍微縮排比較好看*/
+}
+section {
+    display: flex;
+    gap: 20px;
+}
+.card {
+    color: #ffffff;
+    width: 250px;
+    padding: 20px;
+    background-color: #4F5143;
+    border-radius: 15px;
+}
+.card-image img {
+    height: 177px;/*因為上面的 img 已經設定寬度 100% 了，所以這邊只需要設定高度即可*/
+    object-fit: cover;/*讓圖片高度符合區塊高度*/
+    
+}
+.card-title {
+    padding-top: 10px;/*把內容往下擠*/
+    font-size: 24px;
+    height: 38px;/*固定高讓內容對齊比較好看*/
+    margin: 16px 0;
+}
+.card-title a {
+    color: #ffffff; /* 初始顏色 */
+    text-decoration: none; /* 去掉下劃線 */
+    transition: color 0.3s; /* 添加平滑的變色過渡效果 */
+}
+.card-title a:hover {
+    color: #b5e38f; /* 滑鼠懸停時變成綠色 */
+}
+.card-intro {
+    line-height: 160%;/*調整一下描述的行高*/
+    font-size: 16px;
+    color: #c8c8c8;
+}
+
+/* 整個 Section 的樣式 */
+.section2 {
+    display: flex;
+    flex-direction: column; /* 垂直排列 */
+    align-items: center; /* 水平置中 */
+    padding: 100px 20px; /* 增加上下的內距及左右的間距 */
+    margin-bottom: 2px;/*在下方多隔出一些空間*/
+}
+
+/* News 標題 */
+.section2 h2 {
+    font-family: "Italiana", serif; /* 使用 Italiana 字體 */
+    font-size: 36px; /* 字體大小 */
+    margin-bottom: 100px; /* 與下方內容的間距 */
+    color: #000; /* 字體顏色設置為黑色 */
+}
+
+/* News 卡片容器 */
+.news {
+    display: inline-block; /* 讓每個卡片水平排列並保持內部內容置中 */
+    width: 300px; /* 固定卡片寬度 */
+    margin: 0 50px 40px; /* 每個卡片的間距 */
+    vertical-align: top; /* 保持卡片垂直對齊 */
+    text-align: left; /* 內部文字靠左 */
+}
+
+/* News 圖片 */
+.news-image img {
+    width: 100%; /* 讓圖片寬度占滿卡片 */
+    height: auto; /* 保持圖片比例 */
+}
+
+/* News 標題 */
+.news-title {
+    font-family: "Arial", sans-serif; /* 使用 Arial 字體 */
+    font-size: 14px; /* 標題字體大小 */
+    font-weight: bold; /* 標題字體加粗 */
+    margin: 16px 0 8px; /* 與上下文字的間距 */
+    color: #333; /* 標題字體顏色 */
+    line-height: 1.5; /* 行高調整 */
+    height: 70px; /* 固定高度，確保所有標題區塊對齊 */
+    display: -webkit-box; /* 適用於多行文字 */
+    -webkit-box-orient: vertical; /* 垂直排列 */
+}
+
+/* News 描述文字 */
+.news-intro {
+    font-family: "Arial", sans-serif; /* 使用 Arial 字體 */
+    font-size: 12px; /* 描述字體大小 */
+    color: #666; /* 字體顏色 */
+    line-height: 1.6; /* 行高 */
+}
+
+/* 響應式調整 */
+@media screen and (max-width: 768px) {
+    .news {
+        width: 90%; /* 卡片寬度改為占整個容器的 90% */
+        margin: 0 auto 20px; /* 每個卡片置中並調整間距 */
+    }
+}
+
+.section3 {
+    display: flex;
+    
+    flex-direction: column; /* 垂直排列 */
+    align-items: center; /* 水平置中 */
+    padding: 100px 20px; /* 增加上下的內距及左右的間距 */
+    margin-bottom: 52px; /* 與下方內容的距離 */
+}
+.video {
+    display: flex;
+    flex-direction: column; /* 垂直排列文字與圖像 */
+    align-items: center; /* 水平置中 */
+    margin-bottom: 20px; /* 與 iframe 間距 */
+    text-align: center; /* 文字置中 */
+}
+.video p {
+    font-size: 18px; /* 調整字體大小 */
+    color: #333; /* 設定字體顏色 */
+    margin-bottom: 10px; /* 與圖片的間距 */
+}
+.video-image img {
+    width: 12px;
+    height: 12px;
+    margin-top: 5px; /* 與文字的間距 */
+}
+.section3 iframe {
+    width: 858px; /* 設定影片的寬度 */
+    height: 483px; /* 根據影片比例計算高度（16:9 比例） */
+    border-radius: 20px; /* 加上圓角 */
+    overflow: hidden; /* 確保圓角有效 */
+    border: none; /* 移除 iframe 預設邊框 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 增加陰影效果（可選） */
+}
+
+footer {
+    background-color: #86A176; /* 使用圖片中類似的綠色背景 */
+    color: #fff; /* 白色文字 */
+    text-align: center; /* 文字置中 */
+    padding: 40px 20px; /* 內距調整 */
+    font-family: "Italiana", serif; /* 使用更優雅的字體 */
+}
+
+/* Footer 標題樣式 */
+footer h1 {
+    font-size: 48px; /* 顯眼的標題字體大小 */
+    margin-bottom: 52px; /* 與下方內容的距離 */
+    letter-spacing: 10px; /* 增加字母間距 */
+    color: #fff; /* 白色文字 */
+}
+
+/* Footer 導覽連結樣式 */
+.Footer.nav {
+    display: flex; /* 使用 Flex 排列 */
+    justify-content: center; /* 水平置中 */
+    gap: 30px; /* 連結之間的間距 */
+    margin-bottom: 52px; /* 與下方內容的距離 */
+}
+
+.Footer.nav a {
+    text-decoration: none; /* 移除底線 */
+    color: #fff; /* 白色文字 */
+    font-size: 14px; /* 連結字體大小 */
+    font-weight: normal; /* 普通字體 */
+    transition: color 0.3s ease-in-out; /* 過渡效果 */
+}
+
+.Footer.nav a:hover {
+    color: #d5ffb5; /* 滑鼠懸停時的文字顏色 */
+}
+
+/* Footer 社群圖示樣式 */
+.social-links {
+    display: flex; /* 使用 Flex 排列 */
+    justify-content: center; /* 水平置中 */
+    gap: 27px; /* 圖示間距 */
+    margin-bottom: 52px; /* 與下方文字的距離 */
+}
+
+.social-links a img {
+    width: 24px; /* 圖示大小 */
+    height: 24px; /* 圖示大小 */
+    color: #ffffff; /* 淡色文字 */
+    transition: transform 0.3s ease-in-out; /* 增加放大過渡效果 */
+}
+
+.social-links a img:hover {
+    transform: scale(1.2); /* 滑鼠懸停放大 */
+}
+
+/* Footer 版權文字 */
+footer p {
+    font-size: 12px; /* 小字體大小 */
+    color: #ffffff; /* 淡灰色文字 */
+    margin-top: 52px; /* 與上方的距離 */
+    margin-bottom: 52px; /* 與下方內容的距離 */
+}
+
+/* 響應式設計 */
+@media screen and (max-width: 768px) {
+    footer h1 {
+        font-size: 24px; /* 小螢幕標題字體縮小 */
+    }
+
+    .Footer.nav {
+        gap: 15px; /* 縮小連結間距 */
+    }
+
+    .social-links {
+        gap: 10px; /* 縮小圖示間距 */
+    }
+}
